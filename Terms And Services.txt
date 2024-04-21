@@ -1,0 +1,6 @@
+# Terms And Services
+This BoT Uses auto moderation 
+and many more cmds this bot can set welcome msgs you can report about bugs on `!report` cmd 
+
+
+Thanks For Reading
