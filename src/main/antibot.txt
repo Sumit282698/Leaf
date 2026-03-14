@@ -1,0 +1,12 @@
+$nomention
+$onlyAdmin[you need Administrator perms to perform this task.]
+$argsCheck[>1;**Correct Usage:** !antibot (true/false)]
+$if[$message==true]
+$setServerVar[antibot;true]
+$description[<@$authorID> has enabled **AntiBot** system.]
+$endif
+$if[$message==false]
+$setServerVar[antibot;false]
+$description[<@$authorID> has disabled the **AntiBot** system.]
+$endif
+$color[#00ff09]
