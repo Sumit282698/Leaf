@@ -1,0 +1,22 @@
+$author[$serverName[$guildID]]
+$authorIcon[$serverIcon]
+$title[Server Info]
+$color[#00ff09]
+$thumbnail[$serverIcon]
+
+$addField[Server Name;$serverName[$guildID];no]
+$addField[Server ID;$guildID;no]
+$addField[Server Owner;<@$serverOwner>;yes]
+$addField[Total Server Members;$membersCount;yes]
+$addField[Channels Count;$channelCount;yes]
+$addField[Boosts Count;$boostCount;yes]
+$addField[Creation Date;$creationDate[$guildID];yes]
+$addField[Server Region;$serverRegion;yes]
+$addField[Verification Level;$serverVerificationLvl;yes]
+$addField[Role Count;$roleCount;yes]
+$addField[Server Emojis;⟨$serverEmojis[$guildID;/]⟩;no]
+
+
+$addTimestamp
+$footer[$displayName Requested the data]
+$footerIcon[$authorAvatar]
