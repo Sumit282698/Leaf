@@ -1,0 +1,22 @@
+$author[$username]
+$authorIcon[$authorAvatar]
+$description[**Note**: Use `!updates` to know about new functions of this bot
+Select The page from Below for Help *(in cmds)*
+
+> **Server Name:** `$serverName[$guildID]`
+
+> **Server Id:** `$guildID`
+
+User: $if[$getVar[vip;$authorID]==true]<:vip:1229632533281505352> Vip User $elseFree User $endif]
+$thumbnail[$serverIcon]
+$newSelectMenu[help;1;1;Select Option to continue.]
+$addSelectMenuOption[help;Moderation;help1;click to get this bots all moderation commands;;<:Mod:1228535393171935262>]
+$addSelectMenuOption[help;Anti Nuke;help8;click to get antinuke cmds;;<:mod:1229631749370286101>]
+$addSelectMenuOption[help;Normal Commands;help2;normal command which can be used by all users;;<:Boy:1213359462929399860>]
+$addSelectMenuOption[help;Fun & Games;help3;some Fun Commands;;<a:fun:1228535605198061570>]
+$addSelectMenuOption[help;Casino;help5;Casino game click to become rich.;;<:casino:1228536225913114624>]
+$addSelectMenuOption[help;Cmds;help6;bots all cmds and new cmds appear first here on this page;;<:cmds:1228536289226395701>]
+$addSelectMenuOption[help;Vip Cmds;help7;only for vips;;<:vip:1229632533281505352>]
+$color[#00ff09]
+$footerIcon[$authorAvatar]
+$footer[this is Requested by $username]
