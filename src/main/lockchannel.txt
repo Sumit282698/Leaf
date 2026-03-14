@@ -1,0 +1,22 @@
+$nomention
+$onlyAdmin[Error]
+$onlyIf[$getChannelVar[lock;$channelID]==false;Channel is already locked.]
+$editChannelPerms[$channelID;$guildID;-sendmessages]
+$color[#00ff09]
+$title[|🔒|**Channel Locked**]
+$description[This Channel has been locked by <@$authorID>]
+$footer[$displayName]$footerIcon[$authorAvatar]
+$setChannelVar[lock;true;$channelID]
+$deletecommand
+
+$if[$findChannel[$getServerVar[ch]]==$getServerVar[ch]]
+$if[$getServerVar[ch]!=empty]
+$sendEmbedMessage[$getServerVar[ch];;Channel Loked;;
+This Channel has been locked
+> **User**: <@$authorID>
+
+> **Channel**: <#$channelID>
+
+> **Time**: <t:$getTimestamp:R>;00ff09;;;;;$authorAvatar;;yes;no]
+$endif
+$endif
