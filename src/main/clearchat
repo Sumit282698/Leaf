@@ -1,0 +1,20 @@
+$nomention
+$defer
+$deletecommand
+$embedSuppressErrors[Clear;Error: use !clear <no of messages>
+or u have deleted the logs channel please create it again.;#ff0000;;$displayName;$authorAvatar]
+$onlyPerms[managemessages;You need the 'MANAGE_MESSAGES' permission to use that!]
+$color[#00ff09]$description[$message Messages has been cleared.
+User: $if[$getVar[vip;$authorID]==true]<:vip:1229632533281505352> Vip User $elseFree User $endif]
+$deleteIn[3s]
+$clear[$message]
+
+$if[$findChannel[$getServerVar[ch]]==$getServerVar[ch]]
+$if[$getServerVar[ch]!=empty]
+$sendEmbedMessage[$getServerVar[ch];;Messages Cleared;;$message[1] messages has been cleared 
+> **Name**: <@$authorID>
+> **Channel**: <#$channelID>
+;#00ff09;;;Cleared;;$authorAvatar;;yes;]
+
+$endif
+$endif
