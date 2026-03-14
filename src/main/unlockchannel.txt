@@ -1,0 +1,21 @@
+$nomention
+$onlyAdmin[Error]
+$editChannelPerms[$channelID;$guildID;+sendmessages]
+$color[#00ff09]
+$title[|🔓|**Channel UnLocked**]
+$description[This Channel has been Unlocked by $allowMention@$username]
+$footer[$username#$discriminator[$authorID]]
+$setChannelVar[lock;false;$channelID]
+$deletecommand
+$if[$findChannel[$getServerVar[ch]]==$getServerVar[ch]]
+$if[$getServerVar[ch]!=empty]
+$sendEmbedMessage[$getServerVar[ch];;Chanel Unlocked;;<@$authorID> Unlocked channel
+> **User**: <@$authorID>
+
+> **Channel**: <#$channelID>
+
+> **Time**: <t:$getTimestamp:R>
+;#00ff09;;;Unlocked;;$authorAvatar;;yes;]
+
+$endif
+$endif
